@@ -1,0 +1,18 @@
+[
+  {"type": "answerable", "question": "How many days do I have to return a product?", "must_contain": ["14"]},
+  {"type": "answerable", "question": "How long is the warranty on a phone?", "must_contain": ["1 year"]},
+  {"type": "answerable", "question": "How long is the warranty on accessories?", "must_contain": ["6"]},
+  {"type": "answerable", "question": "How much extra does express shipping cost?", "must_contain": ["299"]},
+  {"type": "answerable", "question": "Do I get free shipping on a 6000 rupee order?", "must_contain": ["free"]},
+  {"type": "answerable", "question": "What are the support hours?", "must_contain": ["10", "6"]},
+  {"type": "answerable", "question": "Can I cancel an order before it ships?", "must_contain": ["free"]},
+  {"type": "unanswerable", "question": "Do you sell gaming consoles?"},
+  {"type": "unanswerable", "question": "What is the refund amount for a damaged laptop?"},
+  {"type": "unanswerable", "question": "Who is the CEO of Sunrise Electronics?"},
+  {"type": "unanswerable", "question": "Do you offer a 30-day price match guarantee?"},
+  {"type": "unanswerable", "question": "What is the capital of Gujarat?"},
+  {"type": "unanswerable", "question": "How long is the warranty on a smartwatch?"},
+  {"type": "answerable", "question": "My laptop got wet and stopped working. Is it covered by warranty?", "must_contain": ["not"]},
+  {"type": "answerable", "question": "How much extra will express shipping cost on a 7000 rupee order?", "must_contain": ["299"]},
+  {"type": "answerable", "question": "I never opened my product. Can I still return it after 20 days?", "must_contain": ["14"]}
+]

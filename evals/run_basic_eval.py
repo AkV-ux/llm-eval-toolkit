@@ -1,5 +1,5 @@
 import json
-from target_app.rag_bot_v0 import ask
+from target_app.rag_bot_v1 import ask
 
 REFUSAL = "i don't have that information"
 

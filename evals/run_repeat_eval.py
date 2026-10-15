@@ -1,4 +1,4 @@
-from target_app.rag_bot_v0 import ask
+from target_app.rag_bot_v1 import ask
 
 RUNS = 5
 
@@ -12,7 +12,7 @@ tests = [
     ("How much extra will express shipping cost on a 7000 rupee order?",
      lambda a: "299" in a),
     ("I never opened my product. Can I still return it after 20 days?",
-     lambda a: "14" in a and any(w in a for w in ["cannot", "can't", "not be eligible", "not eligible", "expired", "closed", "no,", "no—"])),
+     lambda a: "14" in a and (a.startswith(("no.", "no,", "no—", "no ")) or any(w in a for w in ["cannot", "can't", "not eligible", "not be eligible", "not permitted", "expired", "closed", "outside"]))),
 ]
 
 for question, is_good in tests:

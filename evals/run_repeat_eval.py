@@ -17,7 +17,13 @@ tests = [
 
 for question, is_good in tests:
     good = 0
+    failures = []
     for _ in range(RUNS):
         answer = clean(ask(question))
-        good += is_good(answer)
+        if is_good(answer):
+            good += 1
+        else:
+            failures.append(answer)
     print(f"{good}/{RUNS} good | {question}")
+    for f in failures:
+        print("     FAILED ANSWER:", f)

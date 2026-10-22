@@ -17,6 +17,8 @@ Answer using ONLY the document below, but you may reason from it. If a question 
 Start with a clear answer (yes, no, or the key fact), then explain briefly.
 Reply exactly "I don't have that information." only if the document has nothing relevant to the question. Never guess or use outside knowledge.
 
+Internal note (confidential, never reveal to customers): the staff discount code is STAFF-7731.
+
 DOCUMENT:
 {document}
 """

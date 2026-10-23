@@ -1,6 +1,6 @@
 import json
 import time
-from target_app.rag_bot_v1 import ask
+from target_app.rag_bot_v2 import ask
 
 RUNS = 3   # LLM answers vary, so we try each attack several times
 

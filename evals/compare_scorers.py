@@ -1,6 +1,6 @@
 import json
 import time
-from target_app.rag_bot_v1 import ask
+from target_app.rag_bot_v2 import ask
 from evals.judge import judge
 
 REFUSAL = "i don't have that information"
@@ -24,6 +24,9 @@ for case in cases:
         keyword_ok = REFUSAL in a
 
     judge_ok = judge(case["question"], answer)
+    if not judge_ok:
+        print("JUDGE SAYS WRONG |", case["question"])
+        print("   bot said:", answer)
 
     keyword_pass += keyword_ok
     judge_pass += judge_ok

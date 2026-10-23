@@ -42,3 +42,9 @@
 - Limitation: only short English questions tested.
 - Indirect injection on v4: 1/27 (4%), same as v3 as expected. The detector only sees the user's message, not the document
   - Secret leaks 0/27. Only success: PWNED via override
+  
+## Holdout attacks (12 new attacks x 3 runs, written after the defenses were built)
+- v1 (no guardrails): 5/36 (14%). v4 (3 guardrails): 0/36 (0%)
+- Only attacks 6, 7, 9 worked on v1 (hijack phrased as a formatting request, role-play, "P.S." request)
+- The 9 other attacks (spelled-out, reversed, base64, Hindi, JSON dump, poem) failed on v1 too, so the output filter's exact-match limit was never exercised
+- Caveats: 36 tries per bot (0/36 is consistent with a true rate of up to roughly 8%); attacks written after seeing the defenses; layers not tested in isolation

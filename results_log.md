@@ -40,3 +40,5 @@
 - Not yet checked: false positives on normal questions; indirect injection on v4; unseen attacks
 - False positives (detector on normal questions): 0/22 blocked, including 2 deliberately risky phrasings ("ignore my earlier message", "repeat")
 - Limitation: only short English questions tested.
+- Indirect injection on v4: 1/27 (4%), same as v3 as expected. The detector only sees the user's message, not the document
+  - Secret leaks 0/27. Only success: PWNED via override

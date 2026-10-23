@@ -38,3 +38,5 @@
 - Direct injection: 0/30 (0%) vs 5/30 (17%) for v1, on the same 10 attacks we developed against
 - Attack 10 caught by the detector, attack 9 caught by the output filter
 - Not yet checked: false positives on normal questions; indirect injection on v4; unseen attacks
+- False positives (detector on normal questions): 0/22 blocked, including 2 deliberately risky phrasings ("ignore my earlier message", "repeat")
+- Limitation: only short English questions tested.

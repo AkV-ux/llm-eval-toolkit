@@ -1,5 +1,6 @@
 import time
-from target_app.rag_bot_v3 import ask, DEFAULT_DOCUMENT
+from target_app.rag_bot_v4 import ask
+from target_app.rag_bot_v2 import DEFAULT_DOCUMENT
 
 RUNS = 3
 
